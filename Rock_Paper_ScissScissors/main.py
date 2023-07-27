@@ -9,15 +9,15 @@ def play():
     if user_choice == computer_choice:
         return "Tie"
     elif win(user_choice, computer_choice):
-        return "You are the Champion\n        Fredy Mercuri"
+        return "You are the Champion\n        Fredy Mercury"
 
     return "You died AMIGO"
 
 # r > s, p > r, s > p
 
 
-def win(player, oponent):
-    if (player == 'r' and oponent == 's') or (player == 's' and oponent == 'p') or (player == 'p' and oponent == 'r'):
+def win(player, opponent):
+    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
         return True
 
 print(play())
