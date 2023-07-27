@@ -24,5 +24,5 @@ def win(player, opponent):
     # Check if the player wins based on the rules: r > s, p > r, s > p
     if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
         return True
-
+# Start the game by calling the play() function and print the result
 print(play())
